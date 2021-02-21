@@ -1,6 +1,8 @@
+
 h1{
 	padding-top:30px;
 	padding-bottom: 20px;
+	color:grey;
 }
 
 label{
@@ -16,3 +18,12 @@ input{
 	
 label{
 	font-weight: bold;}
+
+.container{
+border-radius: 40px;
+border: solid #000;
+border-width: 1px;
+padding: 10px;
+
+}
+
