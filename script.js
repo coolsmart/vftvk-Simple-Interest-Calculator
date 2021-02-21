@@ -2,6 +2,18 @@
 function compute()
 {
     principal = document.getElementById("principal").value;
+    if (principal<=0){
+        document.getElementById("principal").focus();
+        alert("Principal must be greater than 0");
+        return false;
+    }
+        if (principal==""){
+        document.getElementById("principal").focus();
+        alert("Principal must be greater than 0");
+        return false;
+    }
+
+    principal = document.getElementById("principal").value;
     rate=document.getElementById("rate").value;
     years=document.getElementById("years").value;
     result=(principal*rate/100)*years;
@@ -15,5 +27,5 @@ function compute()
 }
     
 function showrate(){
-	document.getElementById("id_rate").innerHTML=document.getElementById("rate").value;
+    document.getElementById("id_rate").innerHTML=document.getElementById("rate").value;
 }        
